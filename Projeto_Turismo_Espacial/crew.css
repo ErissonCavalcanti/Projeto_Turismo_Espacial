@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-size: contain;
+    width: 100vw;
+    color: white;
+    font-family: "Bellefair", serif;
+    overflow: hidden;
+}
+
+header {
+  position: relative;
+  top: 25px;
+  background: linear-gradient(
+    to left,
+    rgba(50, 50, 59, 0.859),
+    rgba(50, 50, 59, 0.859) 55%,
+    rgba(46, 20, 101, 0) 30%
+  );
+}
+
+.img-logo {
+  position: relative;
+  top: 10px;
+  left: 40px;
+  width: 40px;
+}
+
+.linha-horizontal {
+  position: relative;
+  border-bottom: 1px solid white;
+  top: 30px;
+  width: 580px;
+  left: 140px;
+  opacity: 20%;
+}
+
+nav {
+  position: relative;
+  text-align: right;
+  right: 100px;
+  bottom: 25px;
+}
+
+a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+  padding: 0 25px;
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  margin-right: 45px;
+}
+.menu::after {
+  content: "";
+  position: absolute;
+  width: 60%; /* Diminui a largura da linha para 80% da largura do texto do link */
+  height: 2px; /* Espessura da linha */
+  background-color: white; /* Cor da linha */
+  bottom: -20px; /* Aumenta a separação entre o link e a linha */
+  left: 50%; /* Posiciona o início da linha no meio do link */
+  transform: translateX(-50%) scaleX(0); /* Centraliza a linha e começa sem largura */
+  transition: all 0.2s ease-in-out; /* Suaviza a transição */
+  visibility: hidden; /* Inicialmente, o pseudo-elemento não é visível */
+}
+.menu:hover::after {
+  visibility: visible; /* Torna o pseudo-elemento visível ao passar o mouse */
+  transform: translateX(-50%) scaleX(1); /* Centraliza a linha e estende a largura para o valor total */
+}
+/* ------------------------- FIM DO CABEÇALHO-------------------------------*/
+.title-destination {
+  position: relative;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  left: 140px;
+  top: 80px;
+  margin: 0;
+  width: 400px;
+  letter-spacing: 4px;
+}
+span {
+  font-weight: bold;
+  padding-right: 25px;
+  color: rgb(132, 131, 131);
+}
+
+.informations-crew {
+  position: relative;
+  top: 120px;
+  width: 400px;
+  margin-left: 140px;
+}
+h2 {
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  font-weight: lighter;
+  color: rgba(136, 136, 141, 0.859);
+  
+}
+h1 {
+  font-family: "Bellefair", serif;
+  font-size: 54px;
+  width: 600px;
+  font-weight: normal;
+  margin: 0;
+}
+p {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.6;
+  color: rgb(191, 201, 255);
+  width: 440px;
+}
+/* ------------------------- FIM DA SEÇÃO INFORMAÇÕES-------------------------------*/
+
+.crew-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+  }
+  .nav-circles {
+    position: relative;
+    top: 190px;
+    left: 140px;
+    padding-right: 10px;
+    background-color: white;
+    transition: 0.5s;
+    opacity: 17.44%;
+    border-radius: 25px;
+    width: 15px; /* Defina a largura desejada */
+    height: 15px; /* Defina a altura desejada */
+  }
+  .nav-circles-active {
+    background-color: white;
+    opacity: 100%;
+  }
+  .nav-circles:hover {
+    background-color: #979797;
+    transition: 0.5s;
+    opacity: 100%;
+    cursor: pointer;
+  }
+  /* ------------------------- FIM DA SEÇÃO CREW-NAV-------------------------------*/
+
+  .image-crew{
+    position: relative;
+    bottom: 265px;
+    margin-left: 840px;
+    width: 500px;
+    height: 575px; 
+    
+}

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    color: white;
+    font-family: "Bellefair", serif;
+    margin-right: 0;
+    
+}
+
+header  {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    background: linear-gradient(to left, #10203e, #f0eff01d 55%, #0b0d1900 30%);
+}
+
+.img-logo {
+    position: relative;
+     top: 10px; 
+     left:40px ;
+     width: 40px;
+ }
+ 
+ .linha-horizontal{
+     position: relative;
+     border-bottom: 1px solid white;
+     top: 30px;
+     width: 580px;
+     left: 140px;
+     opacity:20% ;
+ }
+
+nav{
+    position: relative;
+    text-align: right;
+    right: 100px;
+    bottom: 25px;
+   
+   
+}
+
+a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 16px;
+    font-style: normal;
+    position: relative;
+    margin-right: 45px;
+    
+    
+}
+a::after {
+    content: '';
+    position: absolute;
+    width: 70%; /* Diminui a largura da linha para 80% da largura do texto do link */
+    height: 2px; /* Espessura da linha */
+    background-color: white; /* Cor da linha */
+    bottom: -20px; /* Aumenta a separação entre o link e a linha */
+    left: 50%; /* Posiciona o início da linha no meio do link */
+    transform: translateX(-50%) scaleX(0); /* Centraliza a linha e começa sem largura */
+    transition: all 0.2s ease-in-out; /* Suaviza a transição */
+    visibility: hidden; /* Inicialmente, o pseudo-elemento não é visível */
+}
+
+a:hover::after {
+    visibility: visible; /* Torna o pseudo-elemento visível ao passar o mouse */
+    transform: translateX(-50%) scaleX(1); /* Centraliza a linha e estende a largura para o valor total */
+}
+/* ------------------------- FIM DO CABEÇALHO-------------------------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+.titulo-home, .texto-home, h2{
+    position: relative;
+    top: 150px;
+    left: 140px;
+    margin: 20px;
+    
+}
+.titulo-home{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 34px;
+    margin-bottom: 0px;
+   
+}
+h2{
+    font-size: 120px;
+    font-weight: lighter;
+}
+
+.texto-home{
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-style: normal;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+h3{
+    
+    margin: 0; /* Para remover as margens padrão do h3 */
+    font-size: 25px; /* Ajuste conforme necessário */
+    color: black; /* Cor do texto dentro da bola */ 
+    font-weight: lighter;
+}
+
+.circulo-branco{
+    width: 220px; /* Ajuste conforme necessário */
+    height: 220px; /* Ajuste conforme necessário */
+    background-color: white;
+    border-radius: 50%; /* Para criar uma bola */
+    display: flex;
+    justify-content: center; /* Para centralizar o conteúdo horizontalmente */
+    align-items: center; /* Para centralizar o conteúdo verticalmente */
+    margin: 0 auto; /* Para centralizar a bola na página */
+    position: fixed;
+    right: 200px;
+    bottom: 150px;
+}
+
+/* ------------------------- FIM DA 1ª SEÇÃO -------------------------------*/
